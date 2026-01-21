@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Mental Health Awareness</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="logo-text">Mindful Journey</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link active">Feedback</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Feedback Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="animate-on-scroll">Share Your Feedback</h1>
+            <p class="animate-on-scroll">Your thoughts help us improve and grow</p>
+        </div>
+    </section>
+
+    <!-- Feedback Content -->
+    <section class="feedback-section">
+        <div class="container">
+            <div class="feedback-layout">
+                <div class="feedback-form-container animate-on-scroll">
+                    <h2>We'd Love to Hear From You</h2>
+                    <p class="form-intro">Your feedback helps us serve the community better and improve our resources.</p>
+                    
+                    <form class="feedback-form" id="feedback-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="e68039b7-899f-4587-b227-fbdabe0a9361">
+                        
+                        <div class="form-group">
+                            <label for="feedback-name">Name <span class="optional">(optional)</span></label>
+                            <input 
+                                type="text" 
+                                id="feedback-name" 
+                                name="name" 
+                                placeholder="Your name"
+                            >
+                            <span class="error-message" id="feedback-name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedback-email">Email <span class="required">*</span></label>
+                            <input 
+                                type="email" 
+                                id="feedback-email" 
+                                name="email" 
+                                placeholder="your.email@example.com"
+                                required
+                            >
+                            <span class="error-message" id="feedback-email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedback-text">Feedback <span class="required">*</span></label>
+                            <textarea 
+                                id="feedback-text" 
+                                name="message" 
+                                rows="8" 
+                                placeholder="Share your thoughts, suggestions, or experiences..."
+                                required
+                            ></textarea>
+                            <span class="error-message" id="feedback-text-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">Submit Form</button>
+                        
+                        <div class="form-success" id="feedback-success">
+                            <svg class="success-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p>Thank you for taking the time to share your feedback! Your input is valuable and helps us improve.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="feedback-info-container animate-on-scroll">
+                    <div class="info-section">
+                        <h3>Why Your Feedback Matters</h3>
+                        <p>We value your feedback, suggestions, and experiences. Your input helps us better serve the community and improve our resources and content.</p>
+                    </div>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Share Your Thoughts</h4>
+                                <p>Tell us about your experience with our website and resources</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Suggest Improvements</h4>
+                                <p>Help us enhance our content and user experience</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Help Us Grow</h4>
+                                <p>Contribute to making mental health resources more accessible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="logo-text">Mindful Journey</span>
+                    </div>
+                    <p>Breaking the silence, building understanding. Together, we can create a world where mental health is understood, supported, and prioritized.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="resources.html#self-care">Self-Care Tips</a></li>
+                        <li><a href="resources.html#community">Community Support</a></li>
+                        <li><a href="resources.html#education">Education</a></li>
+                        <li><a href="contact.html">Get Help</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Emergency Support</h3>
+                    <p class="emergency-info">If you're in crisis, please reach out:</p>
+                    <ul class="footer-links emergency-footer">
+                        <li>988 - Suicide Prevention</li>
+                        <li>Text HOME to 741741</li>
+                        <li>Call 911 for emergencies</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mental Health Awareness Initiative. All rights reserved.</p>
+                <p class="footer-credit">Built with compassion, care, and professional expertise</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
